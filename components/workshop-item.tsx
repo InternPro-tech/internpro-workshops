@@ -39,7 +39,7 @@ const WorkShopItem = ({
                 Register Now
               </RazorpayButton>
             ) : (
-              "Coming Soon"
+              "Coming Soon!!"
             )}
           </div>
         )}
