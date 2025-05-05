@@ -37,7 +37,7 @@ export function PricingCard() {
               <Check className="h-4 w-4 text-indigo-600" />
             </div>
             <span className="text-slate-700">
-              Live interactive workshop (4 hours)
+              Live interactive workshop (3 hours)
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -53,7 +53,7 @@ export function PricingCard() {
               <Check className="h-4 w-4 text-indigo-600" />
             </div>
             <span className="text-slate-700">
-              30-day access to workshop recording
+              48-hours access to workshop recording
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -73,7 +73,7 @@ export function PricingCard() {
               <Check className="h-4 w-4 text-indigo-600" />
             </div>
             <span className="font-medium text-indigo-700">
-              BONUS: AI Agent Templates Pack
+              and 4 BONUSES worth ₹28,996- FREE!
             </span>
           </div>
         </div>

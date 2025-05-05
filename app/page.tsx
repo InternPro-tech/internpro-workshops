@@ -2,19 +2,19 @@
 
 import Image from "next/image";
 import WorkShopItem from "@/components/workshop-item";
+import { Footer } from "@/components/footer";
 
 export default function Main() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-slate-50">
       <div className="container p-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-8">
+          <div className="mb-8 flex items-center justify-center">
             <Image
-              src="/placeholder.svg?height=40&width=120"
+              src="/internpro-white.jpg"
               alt="Company Logo"
               width={120}
-              height={40}
-              className="h-10 mx-auto"
+              height={120}
             />
           </div>
           <h1 className="text-3xl font-bold tracking-tighter text-slate-900 sm:text-4xl md:text-5xl">
@@ -25,7 +25,7 @@ export default function Main() {
             in the tech industry.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-2 lg:grid-cols-3 py-4">
           <WorkShopItem
             hasPaymentButton={true}
             title="AI Agents with Python"
@@ -39,9 +39,18 @@ export default function Main() {
             description="Master frontend development . Register now!"
             href="/frontend-using-ai"
             paymentPageUrl="https://example.com/payment-page-js"
+            isDisabled={true}
+          />
+          <WorkShopItem
+            hasPaymentButton={true}
+            title="UI/UX Design with Figma"
+            description="Learn UI/UX design principles and tools in this workshop."
+            href="/ui-ux-design"
+            paymentPageUrl="https://example.com/payment-page-figma"
+            isDisabled={true}
           />
         </div>
-        <footer className="mt-12 border-t border-slate-200 pt-6 text-center">
+        {/* <footer className="mt-12 border-t border-slate-200 pt-6 text-center">
           <div className="flex flex-col items-center">
             <Image
               src="/placeholder.svg"
@@ -79,7 +88,8 @@ export default function Main() {
               © {new Date().getFullYear()} InternPro. All rights reserved.
             </p>
           </div>
-        </footer>
+        </footer> */}
+        <Footer />
       </div>
     </div>
   );

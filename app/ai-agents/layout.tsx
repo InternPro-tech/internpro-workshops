@@ -17,28 +17,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://example.com/webinar",
+    url: "https://workshop.internpro.tech/ai-agents",
     siteName: "AI Python Webinar",
     title: "Master AI Agent Development with Python | Live Webinar",
     description:
       "Learn how to build powerful AI agents from scratch using Python in this intensive workshop. Limited seats available!",
     images: [
       {
-        url: "https://example.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "AI Python Webinar",
+        url: "https://webinar.internpro.tech/internpro-white.png",
+        width: 32,
+        height: 32,
+        alt: "Workshops by InternPro",
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Build AI Agents using Python | Live Webinar",
-    description:
-      "Master AI agent development in this hands-on Python workshop. Register now!",
-    images: ["https://example.com/twitter-image.jpg"],
-  },
-  generator: "v0.dev",
 };
 
 export default function RootLayout({

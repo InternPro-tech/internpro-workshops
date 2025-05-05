@@ -1,22 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { X } from "lucide-react"
-import { CountdownTimer } from "@/components/countdown-timer"
-import { RazorpayButton } from "@/components/razorpay-button"
+import { useState } from "react";
+import { X } from "lucide-react";
+import { CountdownTimer } from "@/components/countdown-timer";
+import { RazorpayButton } from "@/components/razorpay-button";
 
 export function StickyBanner() {
-  const [visible, setVisible] = useState(true)
-
-  if (!visible) {
-    return null
-  }
-
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-slate-900 text-white p-3 shadow-lg">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center space-x-2">
-          <div className="text-slate-300 text-sm font-medium">Limited Time Offer:</div>
+          <div className="text-slate-300 text-sm font-medium">
+            Limited Time Offer:
+          </div>
           <CountdownTimer className="text-white" />
         </div>
         <div className="flex items-center gap-4">
@@ -28,11 +24,8 @@ export function StickyBanner() {
           >
             Register Now - ₹199 Only
           </RazorpayButton>
-          <button onClick={() => setVisible(false)} className="text-slate-400 hover:text-white" aria-label="Close">
-            <X className="h-5 w-5" />
-          </button>
         </div>
       </div>
     </div>
-  )
+  );
 }

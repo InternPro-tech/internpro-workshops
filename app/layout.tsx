@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     description: "Learn, Intern and get industry ready with our workshops",
     images: [
       {
-        url: "https://webinar.internpro.tech/internpro-short.png",
-        width: 1200,
-        height: 630,
+        url: "https://webinar.internpro.tech/internpro-white.png",
+        width: 32,
+        height: 32,
         alt: "Workshops by InternPro",
       },
     ],

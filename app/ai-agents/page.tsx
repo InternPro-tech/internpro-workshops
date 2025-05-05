@@ -81,8 +81,8 @@ export default function WebinarLanding() {
                   <span className="text-indigo-600">AI Agents</span> with Python
                 </h1>
                 <p className="max-w-[600px] text-slate-600 md:text-xl">
-                  Learn how to create powerful, autonomous AI agents that can
-                  understand, reason, and act on your behalf.
+                  In just 3 hours, learn to build production-ready AI agents
+                  that can think, decide, and act using Python and LangChain
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex items-center gap-2">
@@ -114,17 +114,11 @@ export default function WebinarLanding() {
               <div className="flex-1">
                 <div className="relative mx-auto aspect-video max-w-md overflow-hidden rounded-xl shadow-xl border border-slate-200">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="\ai-agents\instructor.jpg"
                     alt="AI Agents with Python"
                     width={600}
-                    height={400}
-                    className="object-cover"
+                    height={600}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-indigo-900/40 to-transparent flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg cursor-pointer">
-                      <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-indigo-600 border-b-8 border-b-transparent ml-1"></div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -306,14 +300,14 @@ export default function WebinarLanding() {
                   Hurry! This special offer expires in the next 15 minutes
                 </p>
               </div>
-              <div className="mt-8 grid gap-8 md:grid-cols-3">
+              <div className="mt-8 grid gap-8 md:grid-cols-4">
                 <Card className="bg-white/10 backdrop-blur-sm border-0">
                   <CardHeader>
                     <CardTitle className="text-white">Bonus #1</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-white/90">
-                      AI Agent Templates Pack worth ₹499 - FREE
+                      30+ AI Agent Templates Pack worth ₹14999 - FREE
                     </p>
                   </CardContent>
                 </Card>
@@ -323,7 +317,7 @@ export default function WebinarLanding() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-white/90">
-                      Private Discord Community Access - FREE
+                      Exclusive AI Toolkit worth ₹5999 - FREE
                     </p>
                   </CardContent>
                 </Card>
@@ -333,7 +327,17 @@ export default function WebinarLanding() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-white/90">
-                      AI Development Resource Guide - FREE
+                      50+ AI Agents Prompts Library worth ₹3999 - FREE
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-white/10 backdrop-blur-sm border-0">
+                  <CardHeader>
+                    <CardTitle className="text-white">Bonus #3</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-white/90">
+                      30+ Top AI Tools worth ₹3999 - FREE
                     </p>
                   </CardContent>
                 </Card>
@@ -422,10 +426,9 @@ export default function WebinarLanding() {
               <div className="grid gap-12 md:grid-cols-[1fr_2fr]">
                 <div className="relative aspect-square overflow-hidden rounded-xl shadow-md">
                   <Image
-                    src="/placeholder.svg?height=400&width=400"
+                    src="/ai-agents/instructor.jpg"
                     alt="Instructor"
-                    width={400}
-                    height={400}
+                    fill
                     className="object-cover"
                   />
                 </div>
@@ -433,31 +436,51 @@ export default function WebinarLanding() {
                   <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                     Meet Your Instructor
                   </h2>
-                  <h3 className="mt-2 text-xl font-semibold text-indigo-600">
-                    Alex Johnson
-                  </h3>
+                  <div className="flex items-center justify-start gap-4">
+                    <span className="text-xl bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-bold">
+                      Abhay Yeole
+                    </span>
+                    <a
+                      href="https://www.linkedin.com/in/abhay-yeole-17641779/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-600 hover:text-indigo-800"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                        className="h-6 w-6"
+                      >
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.378-.028-3.152-1.922-3.152-1.922 0-2.218 1.502-2.218 3.052v5.6h-3v-10h2.888v1.367h.041c.402-.761 1.384-1.562 2.849-1.562 3.045 0 3.608 2.004 3.608 4.609v5.586z" />
+                      </svg>
+                    </a>
+                  </div>
+                  {/* <h3 className="mt-2 text-xl font-semibold text-indigo-600">
+                    Abhay Yeole
+                  </h3> */}
                   <p className="mt-2 text-slate-600">
-                    AI Developer with 8+ years of Python experience
+                    AI Expert with 5+ years of experience
                   </p>
                   <div className="mt-6 space-y-4 text-slate-600">
                     <p>
-                      Alex is a seasoned AI developer who has helped build
-                      intelligent systems for startups and Fortune 500
-                      companies. With a background in computer science and
-                      machine learning, he specializes in creating practical AI
-                      solutions that solve real-world problems.
+                      Meet Abhay Yeole, an AI expert and dedicated mentor with
+                      over 5 years of industry experience. He has applied
+                      machine learning and AI solutions across various domains,
+                      turning complex challenges into smart, scalable results.
                     </p>
                     <p>
-                      As the author of "Building Intelligent Agents with Python"
-                      and a regular speaker at tech conferences, Alex is known
-                      for his ability to break down complex concepts into
-                      easy-to-understand lessons.
+                      As a trainer and speaker, Abhay simplifies advanced AI
+                      topics through real-world examples and clear, engaging
+                      delivery. From neural networks to ethical AI, his sessions
+                      are known for making tough concepts easy to grasp and
+                      immediately useful.
                     </p>
                     <p>
-                      His hands-on teaching approach ensures that you'll not
-                      only understand the theory behind AI agents but will be
-                      able to build and deploy your own by the end of the
-                      workshop.
+                      Abhay is also a hands-on mentor, guiding learners in
+                      building portfolios, acing interviews, and growing in the
+                      AI field. His support goes beyond the technical—helping
+                      individuals confidently step into impactful tech careers.
                     </p>
                   </div>
                 </div>
@@ -525,10 +548,8 @@ export default function WebinarLanding() {
                     What if I can't attend live?
                   </AccordionTrigger>
                   <AccordionContent className="text-slate-600">
-                    All sessions will be recorded and available for replay for
-                    30 days after the workshop. However, we recommend attending
-                    live to participate in the interactive exercises and Q&A
-                    sessions.
+                    We recommend attending live to participate in the
+                    interactive exercises and Q&A sessions.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="faq-4">
