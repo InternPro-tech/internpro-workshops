@@ -5,7 +5,6 @@ import { Calendar, Clock, MapPin, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/footer";
 import { useEffect, useState } from "react";
-import { env } from "@/app/env";
 
 export default function ThankYouPage() {
   const [sundayDate, setSundayDate] = useState("");
@@ -107,7 +106,7 @@ export default function ThankYouPage() {
               </div>
               <div className="mt-8">
                 <Link
-                  href={env.NEXT_AI_AGENTS_WA_GROUP_LINK || "#"}
+                  href="https://chat.whatsapp.com/Bq3uk3SR0GiGH0CM9iNoeO"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
