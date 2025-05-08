@@ -22,43 +22,6 @@ export default function ThankYouPage() {
     setSundayDate(getNextSunday());
   }, []);
 
-  // Add a facebook pixel event for successful payment and registration
-  useEffect(() => {
-    if (typeof window !== "undefined" && typeof window.fbq === "function") {
-      window.fbq("track", "Purchase", {
-        content_name: "AI Agents with Python Workshop",
-        value: 19900 / 100,
-        currency: "INR",
-      });
-    }
-
-    // add a Complete registration event for Facebook Pixel
-    if (typeof window.fbq === "function") {
-      window.fbq("track", "CompleteRegistration", {
-        currency: "INR",
-        value: 19900 / 100,
-        content_name: name,
-      });
-    }
-  }, []);
-  // Add a google analytics event for successful payment and registration
-  useEffect(() => {
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "purchase", {
-        currency: "INR",
-        value: 19900 / 100,
-        items: [
-          {
-            item_name: "AI Agents with Python Workshop",
-            item_category: "Workshop",
-            price: 19900 / 100,
-            item_brand: "InternPro",
-            quantity: 1,
-          },
-        ],
-      });
-    }
-  }, []);
   return (
     <div className="flex min-h-screen flex-col bg-slate-50">
       <main className="flex-1">

@@ -4,6 +4,7 @@ import { Inter, DM_Sans } from "next/font/google";
 import "../globals.css";
 import Script from "next/script";
 import { env } from "@/app/env";
+import Marquee from "react-fast-marquee";
 
 const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
@@ -124,6 +125,17 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} ${dmSans.variable}`}>
+        <Marquee
+          loop={0}
+          speed={50}
+          gradient={false}
+          pauseOnHover={true}
+          autoFill={true}
+        >
+          <p className="text-yellow-400 text-md font-medium px-2 py-2 bg-red-900">
+            ⚠️ Limited time offer! 🟡 80% off 🟡 Save your spot!!
+          </p>
+        </Marquee>
         {children}
       </body>
     </html>

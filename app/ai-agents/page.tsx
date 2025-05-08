@@ -26,6 +26,8 @@ import { RazorpayButton } from "@/components/razorpay-button";
 import { StickyBanner } from "@/components/sticky-banner";
 import { Footer } from "@/components/footer";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
+import { AI_AGENTS_PAYMENT_URL } from "@/utils/constants";
+import Marquee from "react-fast-marquee";
 
 export default function WebinarLanding() {
   const [currentDate, setCurrentDate] = useState("");
@@ -75,10 +77,12 @@ export default function WebinarLanding() {
                       height={40}
                     />
                   </div>
+                  |<p className="text-slate-700">an AICTE Accredited Company</p>
                 </div>
                 <h1 className="text-3xl font-bold tracking-tighter text-slate-900 sm:text-4xl md:text-5xl lg:text-6xl">
-                  Build Intelligent{" "}
-                  <span className="text-indigo-600">AI Agents</span> with Python
+                  Master <span className="text-indigo-600">AI Agents</span>{" "}
+                  <br />
+                  with Python
                 </h1>
                 <p className="max-w-[600px] text-slate-600 md:text-xl">
                   In just 3 hours, learn to build production-ready AI agents
@@ -102,14 +106,17 @@ export default function WebinarLanding() {
                     <span className="text-slate-700">Limited Seats</span>
                   </div>
                 </div>
-                <RazorpayButton
-                  amount={19900}
-                  name="AI Agents with Python Workshop"
-                  className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-2 rounded-md shadow-md"
-                  paymentPageUrl="https://rzp.io/rzp/kuseBquE"
-                >
-                  Register Now - ₹199 Only
-                </RazorpayButton>
+                <div className="flex items-center justify-center gap-4 md:gap-8 md:justify-start">
+                  <RazorpayButton
+                    amount={19900}
+                    name="AI Agents with Python Workshop"
+                    className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-2 rounded-md shadow-md"
+                    paymentPageUrl={AI_AGENTS_PAYMENT_URL}
+                  >
+                    Register Now - ₹199 Only
+                  </RazorpayButton>
+                  <p className="text-sm text-slate-500">Regular Price: ₹999</p>
+                </div>
               </div>
               <div className="flex-1">
                 <div className="relative mx-auto aspect-video max-w-md overflow-hidden rounded-xl shadow-xl border border-slate-200">
@@ -279,7 +286,7 @@ export default function WebinarLanding() {
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-                Register Before {currentDate} to Save 80%
+                Register Before {currentDate} to get 80% off!
               </h2>
               <div className="mt-4 flex items-center justify-center gap-4 sm:gap-8">
                 <div className="flex flex-col items-center">
@@ -346,9 +353,9 @@ export default function WebinarLanding() {
                 amount={19900}
                 name="AI Agents with Python Workshop"
                 className="mt-12 bg-white text-indigo-700 hover:bg-slate-100 font-semibold text-lg px-8 py-3 rounded-md shadow-md"
-                paymentPageUrl="https://rzp.io/rzp/kuseBquE"
+                paymentPageUrl={AI_AGENTS_PAYMENT_URL}
               >
-                CLAIM YOUR DISCOUNT NOW
+                CLAIM YOUR SEAT NOW
               </RazorpayButton>
             </div>
           </div>
@@ -413,6 +420,16 @@ export default function WebinarLanding() {
                   </p>
                 </div>
               </div>
+            </div>
+            <div className="mt-12 flex items-center justify-center">
+              <RazorpayButton
+                amount={19900}
+                name="AI Agents with Python Workshop"
+                className="text-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium px-6 py-2 rounded-md shadow-md"
+                paymentPageUrl={AI_AGENTS_PAYMENT_URL}
+              >
+                CLAIM YOUR SEAT NOW
+              </RazorpayButton>
             </div>
           </div>
         </MaxWidthWrapper>
@@ -605,7 +622,7 @@ export default function WebinarLanding() {
                 amount={19900}
                 name="AI Agents with Python Workshop"
                 className="mt-8 bg-white text-indigo-700 hover:bg-slate-100 font-semibold text-lg px-8 py-3 rounded-md shadow-md"
-                paymentPageUrl="https://rzp.io/rzp/kuseBquE"
+                paymentPageUrl={AI_AGENTS_PAYMENT_URL}
               >
                 REGISTER NOW - ₹199 ONLY
               </RazorpayButton>
