@@ -340,7 +340,7 @@ export default function WebinarLanding() {
                 </Card>
                 <Card className="bg-white/10 backdrop-blur-sm border-0">
                   <CardHeader>
-                    <CardTitle className="text-white">Bonus #3</CardTitle>
+                    <CardTitle className="text-white">Bonus #4</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-white/90">
