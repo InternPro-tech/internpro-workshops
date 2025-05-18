@@ -69,7 +69,7 @@ export default function ThankYouPage() {
               </div>
               <div className="mt-8">
                 <Link
-                  href="https://chat.whatsapp.com/Bq3uk3SR0GiGH0CM9iNoeO"
+                  href="https://chat.whatsapp.com/HJ3U3hUDaB8H8wh155L3Qs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
